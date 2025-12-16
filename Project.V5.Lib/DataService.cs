@@ -29,7 +29,7 @@ namespace Project.V5.Lib
                 // внутренний цикл: проходим по столбцам
                 for (int j = 0; j < columns; j++)
                 {
-                    // заполняем ячейку матрицы 
+                    // заполняем ячейку матрицы
                     if (j < elem.Length)
                     {
                         matrix[i, j] = elem[j];
