@@ -13,8 +13,8 @@ namespace Project.V5.Lib
             // rows (строки) = количество строк в файле
             int rows = lines.Length;
 
-            // columns (столбцы) = количество элементов в первой строке, разделённых запятыми
-            string[] firstLine = lines[0].Split(',');
+            // columns (столбцы) = количество элементов в первой строке, разделёнными точкой с запятой
+            string[] firstLine = lines[0].Split(';');
             int columns = firstLine.Length;
 
             // создание матрицы (двумерного массива)
@@ -23,8 +23,8 @@ namespace Project.V5.Lib
             // заполнение матрицы
             for (int i = 0; i < rows; i++)
             {
-                // разбиваем текущую строку на элементы по запятой
-                string[] elem = lines[i].Split(',');
+                // разбиваем текущую строку на элементы через точку с запятой
+                string[] elem = lines[i].Split(';');
 
                 // внутренний цикл: проходим по столбцам
                 for (int j = 0; j < columns; j++)
