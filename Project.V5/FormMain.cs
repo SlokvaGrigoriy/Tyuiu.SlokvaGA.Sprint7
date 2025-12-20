@@ -89,7 +89,7 @@ namespace Project.V5
                     {
                         string cellValue = cell.Value.ToString();
 
-                        // Вариант 1: Точное совпадение (учитывая пробелы)
+                        // Точное совпадение (учитывая пробелы)
                         if (cellValue.Trim().Equals(searchText, StringComparison.OrdinalIgnoreCase))
                         {
                             cell.Style.BackColor = Color.Yellow;
@@ -99,13 +99,6 @@ namespace Project.V5
                             dataGridViewMain_SGA.CurrentCell = cell;
                             dataGridViewMain_SGA.FirstDisplayedScrollingRowIndex = i;
                         }
-
-                        // Или вариант 2: Содержит (как было)
-                        // if (cellValue.IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0)
-                        // {
-                        //     cell.Style.BackColor = Color.Yellow;
-                        //     found = true;
-                        // }
                     }
                 }
             }
