@@ -30,19 +30,20 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             buttonGo_SGA = new Button();
             buttonHelp_SGA = new Button();
             labelSymbol_SGA = new Label();
             labelWelcome_SGA = new Label();
             labelWelcomeText_SGA = new Label();
             toolTipHelp_SGA = new ToolTip(components);
-            panelButtons_SGA = new Panel();
-            buttonGraph_SGA = new Button();
             buttonFilter_SGA = new Button();
             buttonSort_SGA = new Button();
+            panelButtons_SGA = new Panel();
+            buttonGraph_SGA = new Button();
             progressBar_SGA = new ProgressBar();
             labelAVG_SGA = new Label();
             labelSum_SGA = new Label();
@@ -62,11 +63,44 @@
             toolStripButtonDel_SGA = new ToolStripButton();
             menuStripButtons_SGA = new MenuStrip();
             файлToolStripMenuItem = new ToolStripMenuItem();
+            новыйФайлToolStripMenuItem = new ToolStripMenuItem();
+            открытьToolStripMenuItem = new ToolStripMenuItem();
+            сохранитьToolStripMenuItem = new ToolStripMenuItem();
+            сохранитьКакToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparatorFileUp_SGA = new ToolStripSeparator();
+            печатьToolStripMenuItem = new ToolStripMenuItem();
+            предварительныйПросмотрToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparatorFileDown_SGA = new ToolStripSeparator();
+            выходToolStripMenuItem = new ToolStripMenuItem();
             правкаToolStripMenuItem = new ToolStripMenuItem();
+            отменитьToolStripMenuItem = new ToolStripMenuItem();
+            повторитьToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparatorViewUp_SGA = new ToolStripSeparator();
+            вырезатьToolStripMenuItem = new ToolStripMenuItem();
+            копироватьToolStripMenuItem = new ToolStripMenuItem();
+            вставитьToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparatorViewDown_SGA = new ToolStripSeparator();
+            выделитьВсеToolStripMenuItem = new ToolStripMenuItem();
+            очиститьToolStripMenuItem = new ToolStripMenuItem();
             видToolStripMenuItem = new ToolStripMenuItem();
+            отображатьСеткуToolStripMenuItem = new ToolStripMenuItem();
+            показатьПанельСтатистикиToolStripMenuItem = new ToolStripMenuItem();
+            показатьПанельИнструментовToolStripMenuItem = new ToolStripMenuItem();
+            показатьСтрокуСостоянияToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparatorEditUp_SGA = new ToolStripSeparator();
+            увеличитьШрифтToolStripMenuItem = new ToolStripMenuItem();
+            уменьшитьШрифтToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparatorEditDown_SGA = new ToolStripSeparator();
+            темнаяТемаToolStripMenuItem = new ToolStripMenuItem();
             справкаToolStripMenuItem = new ToolStripMenuItem();
-            оПриложенииToolStripMenuItem = new ToolStripMenuItem();
-            руководствоToolStripMenuItem = new ToolStripMenuItem();
+            содержаниеToolStripMenuItem = new ToolStripMenuItem();
+            индексToolStripMenuItem = new ToolStripMenuItem();
+            поискToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparatorRef_SGA = new ToolStripSeparator();
+            оПрограммеToolStripMenuItem = new ToolStripMenuItem();
+            руководствоПользователяToolStripMenuItem = new ToolStripMenuItem();
+            справкаToolStripMenuItem1 = new ToolStripMenuItem();
+            toolStripStatusLabel_SGA = new ToolStripStatusLabel();
             panelGrid_SGA = new Panel();
             dataGridViewMain_SGA = new DataGridView();
             panelChart_SGA = new Panel();
@@ -152,6 +186,32 @@
             toolTipHelp_SGA.ToolTipIcon = ToolTipIcon.Info;
             toolTipHelp_SGA.ToolTipTitle = "Подсказка";
             // 
+            // buttonFilter_SGA
+            // 
+            buttonFilter_SGA.Cursor = Cursors.Hand;
+            buttonFilter_SGA.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonFilter_SGA.Location = new Point(131, 53);
+            buttonFilter_SGA.Name = "buttonFilter_SGA";
+            buttonFilter_SGA.Size = new Size(100, 44);
+            buttonFilter_SGA.TabIndex = 20;
+            buttonFilter_SGA.Text = "Фильтрация";
+            toolTipHelp_SGA.SetToolTip(buttonFilter_SGA, "Нажмите, чтобы использовать фильтрацию");
+            buttonFilter_SGA.UseVisualStyleBackColor = true;
+            buttonFilter_SGA.Click += buttonFilter_SGA_Click;
+            // 
+            // buttonSort_SGA
+            // 
+            buttonSort_SGA.Cursor = Cursors.Hand;
+            buttonSort_SGA.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonSort_SGA.Location = new Point(12, 53);
+            buttonSort_SGA.Name = "buttonSort_SGA";
+            buttonSort_SGA.Size = new Size(100, 44);
+            buttonSort_SGA.TabIndex = 7;
+            buttonSort_SGA.Text = "Сортировка";
+            toolTipHelp_SGA.SetToolTip(buttonSort_SGA, "Нажмите, чтобы использовать сортировку");
+            buttonSort_SGA.UseVisualStyleBackColor = true;
+            buttonSort_SGA.Click += buttonSort_SGA_Click;
+            // 
             // panelButtons_SGA
             // 
             panelButtons_SGA.Controls.Add(buttonGraph_SGA);
@@ -186,28 +246,7 @@
             buttonGraph_SGA.TabIndex = 7;
             buttonGraph_SGA.Text = "График";
             buttonGraph_SGA.UseVisualStyleBackColor = true;
-            // 
-            // buttonFilter_SGA
-            // 
-            buttonFilter_SGA.Cursor = Cursors.Hand;
-            buttonFilter_SGA.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonFilter_SGA.Location = new Point(131, 53);
-            buttonFilter_SGA.Name = "buttonFilter_SGA";
-            buttonFilter_SGA.Size = new Size(100, 44);
-            buttonFilter_SGA.TabIndex = 20;
-            buttonFilter_SGA.Text = "Фильтрация";
-            buttonFilter_SGA.UseVisualStyleBackColor = true;
-            // 
-            // buttonSort_SGA
-            // 
-            buttonSort_SGA.Cursor = Cursors.Hand;
-            buttonSort_SGA.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonSort_SGA.Location = new Point(12, 53);
-            buttonSort_SGA.Name = "buttonSort_SGA";
-            buttonSort_SGA.Size = new Size(100, 44);
-            buttonSort_SGA.TabIndex = 7;
-            buttonSort_SGA.Text = "Сортировка";
-            buttonSort_SGA.UseVisualStyleBackColor = true;
+            buttonGraph_SGA.Click += buttonGraph_SGA_Click;
             // 
             // progressBar_SGA
             // 
@@ -367,51 +406,281 @@
             // 
             // menuStripButtons_SGA
             // 
+            menuStripButtons_SGA.Dock = DockStyle.None;
             menuStripButtons_SGA.Items.AddRange(new ToolStripItem[] { файлToolStripMenuItem, правкаToolStripMenuItem, видToolStripMenuItem, справкаToolStripMenuItem });
             menuStripButtons_SGA.Location = new Point(0, 0);
             menuStripButtons_SGA.Name = "menuStripButtons_SGA";
-            menuStripButtons_SGA.Size = new Size(800, 24);
+            menuStripButtons_SGA.Size = new Size(219, 24);
             menuStripButtons_SGA.TabIndex = 0;
             menuStripButtons_SGA.Text = "menuStrip1";
             // 
             // файлToolStripMenuItem
             // 
+            файлToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { новыйФайлToolStripMenuItem, открытьToolStripMenuItem, сохранитьToolStripMenuItem, сохранитьКакToolStripMenuItem, toolStripSeparatorFileUp_SGA, печатьToolStripMenuItem, предварительныйПросмотрToolStripMenuItem, toolStripSeparatorFileDown_SGA, выходToolStripMenuItem });
             файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             файлToolStripMenuItem.Size = new Size(48, 20);
             файлToolStripMenuItem.Text = "Файл";
             // 
+            // новыйФайлToolStripMenuItem
+            // 
+            новыйФайлToolStripMenuItem.Name = "новыйФайлToolStripMenuItem";
+            новыйФайлToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.N;
+            новыйФайлToolStripMenuItem.Size = new Size(233, 22);
+            новыйФайлToolStripMenuItem.Text = "Новый";
+            новыйФайлToolStripMenuItem.Click += новаяТаблицаToolStripMenuItem_Click;
+            // 
+            // открытьToolStripMenuItem
+            // 
+            открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
+            открытьToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.O;
+            открытьToolStripMenuItem.Size = new Size(233, 22);
+            открытьToolStripMenuItem.Text = "Открыть";
+            открытьToolStripMenuItem.Click += toolStripButtonOpen_SGA_Click;
+            // 
+            // сохранитьToolStripMenuItem
+            // 
+            сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
+            сохранитьToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.S;
+            сохранитьToolStripMenuItem.Size = new Size(233, 22);
+            сохранитьToolStripMenuItem.Text = "Сохранить";
+            сохранитьToolStripMenuItem.Click += toolStripButtonSave_SGA_Click;
+            // 
+            // сохранитьКакToolStripMenuItem
+            // 
+            сохранитьКакToolStripMenuItem.Name = "сохранитьКакToolStripMenuItem";
+            сохранитьКакToolStripMenuItem.Size = new Size(233, 22);
+            сохранитьКакToolStripMenuItem.Text = "Сохранить как...";
+            // 
+            // toolStripSeparatorFileUp_SGA
+            // 
+            toolStripSeparatorFileUp_SGA.Name = "toolStripSeparatorFileUp_SGA";
+            toolStripSeparatorFileUp_SGA.Size = new Size(230, 6);
+            // 
+            // печатьToolStripMenuItem
+            // 
+            печатьToolStripMenuItem.Name = "печатьToolStripMenuItem";
+            печатьToolStripMenuItem.Size = new Size(233, 22);
+            печатьToolStripMenuItem.Text = "Печать";
+            // 
+            // предварительныйПросмотрToolStripMenuItem
+            // 
+            предварительныйПросмотрToolStripMenuItem.Name = "предварительныйПросмотрToolStripMenuItem";
+            предварительныйПросмотрToolStripMenuItem.Size = new Size(233, 22);
+            предварительныйПросмотрToolStripMenuItem.Text = "Предварительный просмотр";
+            // 
+            // toolStripSeparatorFileDown_SGA
+            // 
+            toolStripSeparatorFileDown_SGA.Name = "toolStripSeparatorFileDown_SGA";
+            toolStripSeparatorFileDown_SGA.Size = new Size(230, 6);
+            // 
+            // выходToolStripMenuItem
+            // 
+            выходToolStripMenuItem.Name = "выходToolStripMenuItem";
+            выходToolStripMenuItem.Size = new Size(233, 22);
+            выходToolStripMenuItem.Text = "Выход";
+            выходToolStripMenuItem.Click += выходToolStripMenuItem_Click;
+            // 
             // правкаToolStripMenuItem
             // 
+            правкаToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { отменитьToolStripMenuItem, повторитьToolStripMenuItem, toolStripSeparatorViewUp_SGA, вырезатьToolStripMenuItem, копироватьToolStripMenuItem, вставитьToolStripMenuItem, toolStripSeparatorViewDown_SGA, выделитьВсеToolStripMenuItem, очиститьToolStripMenuItem });
             правкаToolStripMenuItem.Name = "правкаToolStripMenuItem";
-            правкаToolStripMenuItem.Size = new Size(39, 20);
-            правкаToolStripMenuItem.Text = "Вид";
+            правкаToolStripMenuItem.Size = new Size(59, 20);
+            правкаToolStripMenuItem.Text = "Правка";
+            // 
+            // отменитьToolStripMenuItem
+            // 
+            отменитьToolStripMenuItem.Name = "отменитьToolStripMenuItem";
+            отменитьToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Z;
+            отменитьToolStripMenuItem.Size = new Size(190, 22);
+            отменитьToolStripMenuItem.Text = "Отменить";
+            // 
+            // повторитьToolStripMenuItem
+            // 
+            повторитьToolStripMenuItem.Name = "повторитьToolStripMenuItem";
+            повторитьToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Y;
+            повторитьToolStripMenuItem.Size = new Size(190, 22);
+            повторитьToolStripMenuItem.Text = "Повторить";
+            // 
+            // toolStripSeparatorViewUp_SGA
+            // 
+            toolStripSeparatorViewUp_SGA.Name = "toolStripSeparatorViewUp_SGA";
+            toolStripSeparatorViewUp_SGA.Size = new Size(187, 6);
+            // 
+            // вырезатьToolStripMenuItem
+            // 
+            вырезатьToolStripMenuItem.Name = "вырезатьToolStripMenuItem";
+            вырезатьToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.X;
+            вырезатьToolStripMenuItem.Size = new Size(190, 22);
+            вырезатьToolStripMenuItem.Text = "Вырезать";
+            вырезатьToolStripMenuItem.Click += вырезатьToolStripMenuItem_Click;
+            // 
+            // копироватьToolStripMenuItem
+            // 
+            копироватьToolStripMenuItem.Name = "копироватьToolStripMenuItem";
+            копироватьToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.C;
+            копироватьToolStripMenuItem.Size = new Size(190, 22);
+            копироватьToolStripMenuItem.Text = "Копировать";
+            копироватьToolStripMenuItem.Click += копироватьToolStripMenuItem_Click;
+            // 
+            // вставитьToolStripMenuItem
+            // 
+            вставитьToolStripMenuItem.Name = "вставитьToolStripMenuItem";
+            вставитьToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.V;
+            вставитьToolStripMenuItem.Size = new Size(190, 22);
+            вставитьToolStripMenuItem.Text = "Вставить";
+            вставитьToolStripMenuItem.Click += вставитьToolStripMenuItem_Click;
+            // 
+            // toolStripSeparatorViewDown_SGA
+            // 
+            toolStripSeparatorViewDown_SGA.Name = "toolStripSeparatorViewDown_SGA";
+            toolStripSeparatorViewDown_SGA.Size = new Size(187, 6);
+            // 
+            // выделитьВсеToolStripMenuItem
+            // 
+            выделитьВсеToolStripMenuItem.Name = "выделитьВсеToolStripMenuItem";
+            выделитьВсеToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.A;
+            выделитьВсеToolStripMenuItem.Size = new Size(190, 22);
+            выделитьВсеToolStripMenuItem.Text = "Выделить все";
+            // 
+            // очиститьToolStripMenuItem
+            // 
+            очиститьToolStripMenuItem.Name = "очиститьToolStripMenuItem";
+            очиститьToolStripMenuItem.ShortcutKeys = Keys.Delete;
+            очиститьToolStripMenuItem.Size = new Size(190, 22);
+            очиститьToolStripMenuItem.Text = "Очистить";
+            очиститьToolStripMenuItem.Click += очиститьToolStripMenuItem_Click;
             // 
             // видToolStripMenuItem
             // 
+            видToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { отображатьСеткуToolStripMenuItem, показатьПанельСтатистикиToolStripMenuItem, показатьПанельИнструментовToolStripMenuItem, показатьСтрокуСостоянияToolStripMenuItem, toolStripSeparatorEditUp_SGA, увеличитьШрифтToolStripMenuItem, уменьшитьШрифтToolStripMenuItem, toolStripSeparatorEditDown_SGA, темнаяТемаToolStripMenuItem });
             видToolStripMenuItem.Name = "видToolStripMenuItem";
-            видToolStripMenuItem.Size = new Size(59, 20);
-            видToolStripMenuItem.Text = "Правка";
+            видToolStripMenuItem.Size = new Size(39, 20);
+            видToolStripMenuItem.Text = "Вид";
+            // 
+            // отображатьСеткуToolStripMenuItem
+            // 
+            отображатьСеткуToolStripMenuItem.Checked = true;
+            отображатьСеткуToolStripMenuItem.CheckState = CheckState.Checked;
+            отображатьСеткуToolStripMenuItem.Name = "отображатьСеткуToolStripMenuItem";
+            отображатьСеткуToolStripMenuItem.Size = new Size(258, 22);
+            отображатьСеткуToolStripMenuItem.Text = "Отображать сетку";
+            отображатьСеткуToolStripMenuItem.Click += отображатьСеткуToolStripMenuItem_Click;
+            // 
+            // показатьПанельСтатистикиToolStripMenuItem
+            // 
+            показатьПанельСтатистикиToolStripMenuItem.Checked = true;
+            показатьПанельСтатистикиToolStripMenuItem.CheckState = CheckState.Checked;
+            показатьПанельСтатистикиToolStripMenuItem.Name = "показатьПанельСтатистикиToolStripMenuItem";
+            показатьПанельСтатистикиToolStripMenuItem.Size = new Size(258, 22);
+            показатьПанельСтатистикиToolStripMenuItem.Text = "Показать панель статистики";
+            показатьПанельСтатистикиToolStripMenuItem.Click += показатьПанельСтатистикиToolStripMenuItem_Click;
+            // 
+            // показатьПанельИнструментовToolStripMenuItem
+            // 
+            показатьПанельИнструментовToolStripMenuItem.Checked = true;
+            показатьПанельИнструментовToolStripMenuItem.CheckState = CheckState.Checked;
+            показатьПанельИнструментовToolStripMenuItem.Name = "показатьПанельИнструментовToolStripMenuItem";
+            показатьПанельИнструментовToolStripMenuItem.Size = new Size(258, 22);
+            показатьПанельИнструментовToolStripMenuItem.Text = "Показать панель инструментов";
+            показатьПанельИнструментовToolStripMenuItem.Click += показатьПанельИнструментовToolStripMenuItem_Click;
+            // 
+            // показатьСтрокуСостоянияToolStripMenuItem
+            // 
+            показатьСтрокуСостоянияToolStripMenuItem.Checked = true;
+            показатьСтрокуСостоянияToolStripMenuItem.CheckState = CheckState.Checked;
+            показатьСтрокуСостоянияToolStripMenuItem.Name = "показатьСтрокуСостоянияToolStripMenuItem";
+            показатьСтрокуСостоянияToolStripMenuItem.Size = new Size(258, 22);
+            показатьСтрокуСостоянияToolStripMenuItem.Text = "Показать строку состояния";
+            показатьСтрокуСостоянияToolStripMenuItem.Click += показатьСтрокуСостоянияToolStripMenuItem_Click;
+            // 
+            // toolStripSeparatorEditUp_SGA
+            // 
+            toolStripSeparatorEditUp_SGA.Name = "toolStripSeparatorEditUp_SGA";
+            toolStripSeparatorEditUp_SGA.Size = new Size(255, 6);
+            // 
+            // увеличитьШрифтToolStripMenuItem
+            // 
+            увеличитьШрифтToolStripMenuItem.Name = "увеличитьШрифтToolStripMenuItem";
+            увеличитьШрифтToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Add;
+            увеличитьШрифтToolStripMenuItem.Size = new Size(258, 22);
+            увеличитьШрифтToolStripMenuItem.Text = "Увеличить шрифт";
+            увеличитьШрифтToolStripMenuItem.Click += увеличитьШрифтToolStripMenuItem_Click;
+            // 
+            // уменьшитьШрифтToolStripMenuItem
+            // 
+            уменьшитьШрифтToolStripMenuItem.Name = "уменьшитьШрифтToolStripMenuItem";
+            уменьшитьШрифтToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Subtract;
+            уменьшитьШрифтToolStripMenuItem.Size = new Size(258, 22);
+            уменьшитьШрифтToolStripMenuItem.Text = "Уменьшить шрифт";
+            уменьшитьШрифтToolStripMenuItem.Click += уменьшитьШрифтToolStripMenuItem_Click;
+            // 
+            // toolStripSeparatorEditDown_SGA
+            // 
+            toolStripSeparatorEditDown_SGA.Name = "toolStripSeparatorEditDown_SGA";
+            toolStripSeparatorEditDown_SGA.Size = new Size(255, 6);
+            // 
+            // темнаяТемаToolStripMenuItem
+            // 
+            темнаяТемаToolStripMenuItem.Name = "темнаяТемаToolStripMenuItem";
+            темнаяТемаToolStripMenuItem.Size = new Size(258, 22);
+            темнаяТемаToolStripMenuItem.Text = "Темная тема";
+            темнаяТемаToolStripMenuItem.Click += темнаяТемаToolStripMenuItem_Click;
             // 
             // справкаToolStripMenuItem
             // 
-            справкаToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { оПриложенииToolStripMenuItem, руководствоToolStripMenuItem });
+            справкаToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { содержаниеToolStripMenuItem, индексToolStripMenuItem, поискToolStripMenuItem, toolStripSeparatorRef_SGA, оПрограммеToolStripMenuItem, руководствоПользователяToolStripMenuItem, справкаToolStripMenuItem1 });
             справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
             справкаToolStripMenuItem.Size = new Size(65, 20);
             справкаToolStripMenuItem.Text = "Справка";
             // 
-            // оПриложенииToolStripMenuItem
+            // содержаниеToolStripMenuItem
             // 
-            оПриложенииToolStripMenuItem.Name = "оПриложенииToolStripMenuItem";
-            оПриложенииToolStripMenuItem.Size = new Size(149, 22);
-            оПриложенииToolStripMenuItem.Text = "О программе";
-            оПриложенииToolStripMenuItem.ToolTipText = "Нажмите, чтобы открыть информацию о приложении";
+            содержаниеToolStripMenuItem.Name = "содержаниеToolStripMenuItem";
+            содержаниеToolStripMenuItem.Size = new Size(221, 22);
+            содержаниеToolStripMenuItem.Text = "Содержание";
             // 
-            // руководствоToolStripMenuItem
+            // индексToolStripMenuItem
             // 
-            руководствоToolStripMenuItem.Name = "руководствоToolStripMenuItem";
-            руководствоToolStripMenuItem.Size = new Size(149, 22);
-            руководствоToolStripMenuItem.Text = "Руководство";
-            руководствоToolStripMenuItem.ToolTipText = "Нажмите, чтобы открыть руководство пользователя";
+            индексToolStripMenuItem.Name = "индексToolStripMenuItem";
+            индексToolStripMenuItem.Size = new Size(221, 22);
+            индексToolStripMenuItem.Text = "Индекс";
+            // 
+            // поискToolStripMenuItem
+            // 
+            поискToolStripMenuItem.Name = "поискToolStripMenuItem";
+            поискToolStripMenuItem.Size = new Size(221, 22);
+            поискToolStripMenuItem.Text = "Поиск";
+            // 
+            // toolStripSeparatorRef_SGA
+            // 
+            toolStripSeparatorRef_SGA.Name = "toolStripSeparatorRef_SGA";
+            toolStripSeparatorRef_SGA.Size = new Size(218, 6);
+            // 
+            // оПрограммеToolStripMenuItem
+            // 
+            оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
+            оПрограммеToolStripMenuItem.Size = new Size(221, 22);
+            оПрограммеToolStripMenuItem.Text = "О программе";
+            оПрограммеToolStripMenuItem.Click += оПрограммеToolStripMenuItem_Click;
+            // 
+            // руководствоПользователяToolStripMenuItem
+            // 
+            руководствоПользователяToolStripMenuItem.Name = "руководствоПользователяToolStripMenuItem";
+            руководствоПользователяToolStripMenuItem.Size = new Size(221, 22);
+            руководствоПользователяToolStripMenuItem.Text = "Руководство пользователя";
+            руководствоПользователяToolStripMenuItem.Click += руководствоПользователяToolStripMenuItem_Click;
+            // 
+            // справкаToolStripMenuItem1
+            // 
+            справкаToolStripMenuItem1.Name = "справкаToolStripMenuItem1";
+            справкаToolStripMenuItem1.Size = new Size(221, 22);
+            справкаToolStripMenuItem1.Text = "Справка (онлайн)";
+            справкаToolStripMenuItem1.Click += справкаToolStripMenuItem_Click;
+            // 
+            // toolStripStatusLabel_SGA
+            // 
+            toolStripStatusLabel_SGA.Name = "toolStripStatusLabel_SGA";
+            toolStripStatusLabel_SGA.Size = new Size(0, 17);
             // 
             // panelGrid_SGA
             // 
@@ -428,6 +697,7 @@
             dataGridViewMain_SGA.RowHeadersVisible = false;
             dataGridViewMain_SGA.Size = new Size(491, 312);
             dataGridViewMain_SGA.TabIndex = 7;
+            dataGridViewMain_SGA.ColumnAdded += dataGridViewMain_SGA_ColumnAdded;
             // 
             // panelChart_SGA
             // 
@@ -439,19 +709,23 @@
             // 
             // chartGraph_SGA
             // 
-            chartArea2.Name = "ChartArea1";
-            chartGraph_SGA.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            chartGraph_SGA.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            chartGraph_SGA.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            chartGraph_SGA.Legends.Add(legend1);
             chartGraph_SGA.Location = new Point(0, 0);
             chartGraph_SGA.Name = "chartGraph_SGA";
             chartGraph_SGA.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            chartGraph_SGA.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            chartGraph_SGA.Series.Add(series1);
             chartGraph_SGA.Size = new Size(312, 312);
             chartGraph_SGA.TabIndex = 8;
+            title1.Name = "TitleGraph";
+            title1.Text = "График";
+            chartGraph_SGA.Titles.Add(title1);
             // 
             // FormMain
             // 
@@ -473,6 +747,7 @@
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "🏬 Оптовая база";
+            Resize += FormMain_Resize;
             panelButtons_SGA.ResumeLayout(false);
             panelButtons_SGA.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxSearch_SGA).EndInit();
@@ -500,11 +775,43 @@
         private ToolStrip toolStripButtons_SGA;
         private MenuStrip menuStripButtons_SGA;
         private ToolStripMenuItem файлToolStripMenuItem;
+        private ToolStripMenuItem новыйФайлToolStripMenuItem;
+        private ToolStripMenuItem открытьToolStripMenuItem;
+        private ToolStripMenuItem сохранитьToolStripMenuItem;
+        private ToolStripMenuItem сохранитьКакToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparatorFileUp_SGA;
+        private ToolStripMenuItem печатьToolStripMenuItem;
+        private ToolStripMenuItem предварительныйПросмотрToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparatorFileDown_SGA;
+        private ToolStripMenuItem выходToolStripMenuItem;
         private ToolStripMenuItem правкаToolStripMenuItem;
+        private ToolStripMenuItem отменитьToolStripMenuItem;
+        private ToolStripMenuItem повторитьToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparatorViewUp_SGA;
+        private ToolStripMenuItem вырезатьToolStripMenuItem;
+        private ToolStripMenuItem копироватьToolStripMenuItem;
+        private ToolStripMenuItem вставитьToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparatorViewDown_SGA;
+        private ToolStripMenuItem выделитьВсеToolStripMenuItem;
+        private ToolStripMenuItem очиститьToolStripMenuItem;
         private ToolStripMenuItem видToolStripMenuItem;
+        private ToolStripMenuItem отображатьСеткуToolStripMenuItem;
+        private ToolStripMenuItem показатьПанельСтатистикиToolStripMenuItem;
+        private ToolStripMenuItem показатьПанельИнструментовToolStripMenuItem;
+        private ToolStripMenuItem показатьСтрокуСостоянияToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparatorEditUp_SGA;
+        private ToolStripMenuItem увеличитьШрифтToolStripMenuItem;
+        private ToolStripMenuItem уменьшитьШрифтToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparatorEditDown_SGA;
+        private ToolStripMenuItem темнаяТемаToolStripMenuItem;
         private ToolStripMenuItem справкаToolStripMenuItem;
-        private ToolStripMenuItem оПриложенииToolStripMenuItem;
-        private ToolStripMenuItem руководствоToolStripMenuItem;
+        private ToolStripMenuItem содержаниеToolStripMenuItem;
+        private ToolStripMenuItem индексToolStripMenuItem;
+        private ToolStripMenuItem поискToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparatorRef_SGA;
+        private ToolStripMenuItem оПрограммеToolStripMenuItem;
+        private ToolStripMenuItem руководствоПользователяToolStripMenuItem;
+        private ToolStripMenuItem справкаToolStripMenuItem1;
         private Panel panelGrid_SGA;
         private DataGridView dataGridViewMain_SGA;
         private ToolStripButton toolStripButtonOpen_SGA;
@@ -530,5 +837,6 @@
         private Button buttonGraph_SGA;
         private Button buttonFilter_SGA;
         private Panel panelChart_SGA;
+        private ToolStripStatusLabel toolStripStatusLabel_SGA;
     }
 }
